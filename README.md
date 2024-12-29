@@ -1,7 +1,16 @@
+<p align="center">
+	<img width=70px src="(https://github.com/user-attachments/assets/a2721e59-5332-4e72-b874-641ee5c56f44" />
+</p>
+
+<hr />
+
 # raylib-rs_training_game_dev
 - https://github.com/raysan5/raylib
 
 - https://github.com/raylib-rs/raylib-rs
+
+- doc(API)
+  - https://www.raylib.com/cheatsheet/cheatsheet.html
 
 # justfile (C언어_파일 1개 짜리)
 - https://github.com/raysan5/raylib/wiki/Working-on-GNU-Linux#build-raylib-using-cmake
