@@ -1,8 +1,3 @@
-# raylib-rs_training_game_dev
-- https://github.com/raysan5/raylib
-
-- https://github.com/deltaphc/raylib-rs
-
 # justfile (C언어_파일 1개 짜리)
 - https://github.com/raysan5/raylib/wiki/Working-on-GNU-Linux#build-raylib-using-cmake
 
