@@ -1,3 +1,13 @@
+# Run
+
+```bash
+$ clang -lraylib -lGL -lm -lpthread -ldl -lrt -lX11 ./src/main.c
+$ mv *.out target
+$ ./target/./a.out
+```
+
+<hr />
+
 # justfile (C언어_파일 1개 짜리)
 - https://github.com/raysan5/raylib/wiki/Working-on-GNU-Linux#build-raylib-using-cmake
 
