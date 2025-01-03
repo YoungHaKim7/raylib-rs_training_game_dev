@@ -463,6 +463,8 @@ IndentCaseBlocks: false
 IndentGotoLabels: true
 IndentPPDirectives: None
 IndentExternBlock: NoIndent
+
+ColumnLimit: 80
 ```
 
 - `clang-format -i -style=WebKit src/main.c` cli로 실행하기
