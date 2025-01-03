@@ -1,7 +1,7 @@
 # Run
 
 ```bash
-$ clang -lraylib -lGL -lm -lpthread -ldl -lrt -lX11 ./src/main.c
+$ clang ./src/main.c -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
 $ mv *.out target
 $ ./target/./a.out
 ```
