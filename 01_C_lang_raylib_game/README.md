@@ -8,6 +8,10 @@
 - [justfile(LinuxOS)(C언어_파일 1개 짜리)](#justfile-c언어_파일-1개-짜리)
 - [justfile(macOS)(C언어 파일 1개짜리)](#macos용최적화o2)
 
+<hr />
+
+- p[]
+
 
 <hr />
 
@@ -40,6 +44,10 @@ $ ./target/./a.out
   - Game예시 많다.
     - https://github.com/raysan5/raylib-games
   - https://github.com/raysan5/raylib?tab=readme-ov-file#learning-and-docs
+
+<hr />
+
+- [4칸으로 탭 설정 굿 `.clang-format`](#clang-format)
 
 <hr />
 
@@ -430,3 +438,61 @@ vscode:
 	echo '    ],' >> .vscode/tasks.json
 	echo '    "version": "2.0.0"' >> .vscode/tasks.json
 ```
+
+<hr />
+
+# `.clang-format`[|🔝|](#link)
+
+- 다양한 사용법
+  - https://github.com/llvm/llvm-project/issues/61631
+
+- https://clangpowertools.com/blog/getting-started-with-clang-format-style-options.html
+
+- `.clang-format`
+  - clang스타일 변경 관련 (WebKit이 나랑 맞다) https://nx006.tistory.com/62
+
+```
+# BasedOnStyle: WebKit
+# LLVM, Google, Chromium, Mozilla, WebKit
+
+BasedOnStyle: WebKit
+IndentWidth: 4
+ContinuationIndentWidth: 4
+IndentCaseLabels: false
+IndentCaseBlocks: false
+IndentGotoLabels: true
+IndentPPDirectives: None
+IndentExternBlock: NoIndent
+```
+
+- `clang-format -i -style=WebKit src/main.c` cli로 실행하기
+  - [한글로 정리한 .clang-format_https://nx006.tistory.com/62](https://nx006.tistory.com/62)
+
+```bash
+clang-format -i -style=WebKit src/main.c
+```
+
+```
+---
+Language: Cpp
+IndentWidth: 4
+```
+
+- https://gist.github.com/idelsink/c25049d8c987890935f4
+
+- 내가 원하는 라인 clang off 만들기
+  - https://stackoverflow.com/questions/33656800/clang-format-line-breaks
+
+```c
+// clang-format off
+struct studentT {
+    char  name[64];
+    int   age;
+    float gpa;
+    int   grad_yr;
+};
+// clang-format on
+```
+
+- 겁나게 긴 패턴
+  - http://clang.llvm.org/docs/ClangFormatStyleOptions.html
