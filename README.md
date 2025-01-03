@@ -1,5 +1,6 @@
 <p align="center">
 	<img width=70px src="https://github.com/user-attachments/assets/a2721e59-5332-4e72-b874-641ee5c56f44" />
+	<br /><img width=64px src="https://github.com/raysan5/raylib/raw/master/logo/raylib_logo_animation.gif" />
 </p>
 
 <hr />
