@@ -3,14 +3,23 @@
 	<br /><img width=64px src="https://github.com/raysan5/raylib/raw/master/logo/raylib_logo_animation.gif" />
 </p>
 
+# link
+
+- [raylib-rs_training_game_dev]()
+  - [raylib_Install]()
+- [justfile (C언어_파일 1개 짜리)]()
+- [raylib(C언어 예시 많다 굿)]()
+
 <hr />
 
-# raylib(C언어 예시 많다 굿)
+<hr />
+
+# raylib(C언어 예시 많다 굿)[|🔝|](#link)
 - https://github.com/raylib-extras/examples-c
 
 <hr />
 
-# raylib-rs_training_game_dev
+# raylib-rs_training_game_dev[|🔝|](#link)
 - https://github.com/raysan5/raylib
 
 - https://github.com/raylib-rs/raylib-rs
@@ -18,7 +27,22 @@
 - doc(API)
   - https://www.raylib.com/cheatsheet/cheatsheet.html
 
-# justfile (C언어_파일 1개 짜리)
+# Install[|🔝|](#link)
+
+- LinuxOS
+  - https://github.com/raysan5/raylib/wiki#development-platforms
+
+```bash
+- git clone https://github.com/raysan5/raylib.git raylib
+cd raylib
+mkdir build && cd build
+cmake -DBUILD_SHARED_LIBS=ON ..
+make
+sudo make install
+sudo ldconfig
+```
+
+# justfile (C언어_파일 1개 짜리)[|🔝|](#link)
 - https://github.com/raysan5/raylib/wiki/Working-on-GNU-Linux#build-raylib-using-cmake
 
 ```justfile
