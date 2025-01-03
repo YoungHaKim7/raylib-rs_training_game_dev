@@ -4,7 +4,8 @@
 
 - Not sure if you specifically want to use the original C source, but I'm making RayLib projects with the Not-Nik bindings: `git clone https://github.com/Not-Nik/raylib-zig.git` and then run the project_setup.sh script to generate a fresh project. 
 
-- https://www.reddit.com/r/Zig/comments/1f7e82p/cannot_import_raylib_complete_noob/?rdt=38305
+- Cannot import raylib - complete noob (레딧 짱)
+  - https://www.reddit.com/r/Zig/comments/1f7e82p/cannot_import_raylib_complete_noob/?rdt=38305
 
 <hr />
 
