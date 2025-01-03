@@ -89,7 +89,7 @@ r:
 ro:
 	rm -rf {{target_dir}}
 	mkdir -p {{target_dir}}
-	clang {{ldflags_optimize}} {{source}}
+	clang {{source}} {{ldflags_optimize}}
 	mv *.out target
 	{{target_dir}}/./a.out
 
