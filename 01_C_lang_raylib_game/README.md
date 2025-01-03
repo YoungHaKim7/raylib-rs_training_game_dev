@@ -10,6 +10,9 @@ $ ./target/./a.out
 
 # raylib(C언어 예시 많다 굿)
 - https://github.com/raylib-extras/examples-c
+  - Game예시 많다.
+    - https://github.com/raysan5/raylib-games
+  - https://github.com/raysan5/raylib?tab=readme-ov-file#learning-and-docs
 
 <hr />
 
