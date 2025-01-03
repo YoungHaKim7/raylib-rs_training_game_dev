@@ -9,3 +9,5 @@ IndentCaseBlocks: false
 IndentGotoLabels: true
 IndentPPDirectives: None
 IndentExternBlock: NoIndent
+
+ColumnLimit: 80

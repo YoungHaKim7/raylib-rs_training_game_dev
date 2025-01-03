@@ -23,7 +23,8 @@ GameObject* AddChildObject(GameObject* parent)
         return NULL;
 
     parent->ChildCount++;
-    parent->Children = realloc(parent->Children, sizeof(GameObject) * parent->ChildCount);
+    parent->Children
+        = realloc(parent->Children, sizeof(GameObject) * parent->ChildCount);
     GameObject* object = parent->Children + (parent->ChildCount - 1);
 
     InitalizeGameObject(object);
@@ -50,13 +51,15 @@ void DestoryGameObject(GameObject* object)
     object->Children = NULL;
 }
 
-void GameObjectAddComponent(GameObject* object, ComponentType type, void* componentValue)
+void GameObjectAddComponent(
+    GameObject* object, ComponentType type, void* componentValue)
 {
     if (GameObjectHasComponent(object, type))
         return;
 
     object->CompoentSize++;
-    object->Components = realloc(object->Components, sizeof(GameObjectComponent) * object->CompoentSize);
+    object->Components = realloc(
+        object->Components, sizeof(GameObjectComponent) * object->CompoentSize);
     object->Components[object->CompoentSize - 1].CompType = type;
     object->Components[object->CompoentSize - 1].CompValue = componentValue;
 }
