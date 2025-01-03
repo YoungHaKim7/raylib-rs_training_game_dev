@@ -8,6 +8,11 @@ $ ./target/./a.out
 
 <hr />
 
+# raylib(C언어 예시 많다 굿)
+- https://github.com/raylib-extras/examples-c
+
+<hr />
+
 # justfile (C언어_파일 1개 짜리)
 - https://github.com/raysan5/raylib/wiki/Working-on-GNU-Linux#build-raylib-using-cmake
 
