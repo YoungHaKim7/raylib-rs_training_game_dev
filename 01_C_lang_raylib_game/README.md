@@ -6,12 +6,12 @@
 <hr />
 
 - [justfile(LinuxOS)(C언어_파일 1개 짜리)](#justfile-c언어_파일-1개-짜리)
-- [justfile(macOS)(C언어 파일 1개짜리)]()
+- [justfile(macOS)(C언어 파일 1개짜리)](#macos용최적화o2)
 
 
 <hr />
 
-# Run
+# Run[|🔝|](#link)
 
 - https://github.com/raysan5/raylib/wiki/Working-on-macOS
 
