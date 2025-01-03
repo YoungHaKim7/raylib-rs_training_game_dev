@@ -10,7 +10,7 @@
 
 <hr />
 
-- p[]
+- [4칸으로 탭 설정 굿 `.clang-format`](#clang-format)
 
 
 <hr />
