@@ -17,6 +17,9 @@
 
 ```
 git clone https://github.com/CapsCollective/raylib-cpp-starter.git
+
+make setup
+make
 ```
 
 ```bash
