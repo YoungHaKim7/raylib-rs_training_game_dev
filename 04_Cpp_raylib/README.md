@@ -29,6 +29,7 @@ $ g++  bin/main.o -o bin/app -L lib/Linux -l raylib -l GL -l m -l pthread -l dl 
 $ bin/app
 ```
 
+- .gitignore
 
 ```gitignore
 include
