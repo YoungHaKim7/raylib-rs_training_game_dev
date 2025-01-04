@@ -132,18 +132,18 @@ ViewInteresectionType CircleInView(View* view, Vector2 center, float radius)
     return Intersecting;
 }
 
-int main(void) {
+int main(void)
+{
     InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "raylib example basic");
 
     SetTargetFPS(90);
 
     float radius = 50;
     View view;
-    InitView(&view, (Vector2) { 400, 425}, 0, 60);
+    InitView(&view, (Vector2) { 400, 425 }, 0, 60);
 
     // Main loop
-    while (!WindowShouldClose())
-    {
+    while (!WindowShouldClose()) {
         float angle = 0;
 
         if (IsKeyDown(KEY_LEFT))
@@ -170,15 +170,14 @@ int main(void) {
 
         DrawCircleV(point, 5, BLUE);
 
-        Color c =RED;
+        Color c = RED;
 
         ViewInteresectionType t = CircleInView(&view, point, radius);
 
-        if ( t == Intersecting)
+        if (t == Intersecting)
             c = YELLOW;
-        else if ( t == Contained)
+        else if (t == Contained)
             c = GREEN;
-
 
         DrawCircleLinesV(point, radius, c);
 
