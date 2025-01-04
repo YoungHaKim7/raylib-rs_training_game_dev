@@ -1,0 +1,10 @@
+lib
+bin
+.idea
+.DS_Store
+vendor
+.git
+.github
+lib
+include
+docs
