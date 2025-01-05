@@ -1,7 +1,6 @@
 #include <raylib-cpp.hpp>
 
-#include "blocks.cpp"
-#include "headers/grid.h"
+#include "headers/game.h"
 
 #define SCREEN_WIDTH 800
 #define SCREEN_HEIGHT 600
@@ -16,11 +15,8 @@ int main()
 
     SetTargetFPS(60);
 
-    Grid grid = Grid();
-    grid.Print();
+    Game game = Game();
 
-    TBlock block = TBlock();
-    /* block.Move(4,3); */
 
     // Main game loop
     while (!w.ShouldClose()) // Detect window close button or ESC key
@@ -32,11 +28,9 @@ int main()
         // Draw
         BeginDrawing();
         ClearBackground(darkBlue);
-        grid.Draw();
-        block.Draw();
-
+        game.Draw();
         EndDrawing();
     }
 
-    return 0;
+    CloseWindow();
 }
