@@ -27,9 +27,8 @@ int main()
         // Draw
         BeginDrawing();
         ClearBackground(darkBlue);
+        grid.Draw();
 
-        textColor.DrawText(
-            "Congrats! You created your first window!", 190, 200, 20);
         EndDrawing();
     }
 
