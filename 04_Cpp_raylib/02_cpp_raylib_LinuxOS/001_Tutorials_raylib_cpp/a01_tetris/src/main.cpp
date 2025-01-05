@@ -1,4 +1,6 @@
 #include <raylib-cpp.hpp>
+
+#include "blocks.cpp"
 #include "headers/grid.h"
 
 #define SCREEN_WIDTH 800
@@ -15,10 +17,9 @@ int main()
     SetTargetFPS(60);
 
     Grid grid = Grid();
-    grid.grid[0][0] = 1;
-    grid.grid[3][5] = 4;
-    grid.grid[17][8] = 7;
     grid.Print();
+
+    LBlock block = LBlock();
 
     // Main game loop
     while (!w.ShouldClose()) // Detect window close button or ESC key
@@ -31,6 +32,7 @@ int main()
         BeginDrawing();
         ClearBackground(darkBlue);
         grid.Draw();
+        block.Draw();
 
         EndDrawing();
     }
