@@ -57,6 +57,9 @@ void Game::HandleInput()
     case KEY_UP:
         RotateBlock();
         break;
+    case KEY_SPACE:
+        MoveBlockDown_Bottom();
+        break;
     }
 }
 
@@ -84,11 +87,11 @@ void Game::MoveBlockDown()
 {
     if (!gameOver) {
 
-    currentBlock.Move(1, 0);
-    if (IsBlockOutside() || BlockFits() == false) {
-        currentBlock.Move(-1, 0);
-        LockBlock();
-    }
+        currentBlock.Move(1, 0);
+        if (IsBlockOutside() || BlockFits() == false) {
+            currentBlock.Move(-1, 0);
+            LockBlock();
+        }
     }
 }
 
@@ -97,6 +100,20 @@ void Game::MoveBlockUp()
     currentBlock.Move(-1, 0);
     if (IsBlockOutside()) {
         currentBlock.Move(1, 0);
+    }
+}
+
+void Game::MoveBlockDown_Bottom()
+{
+    if (!gameOver) {
+        while (true) {
+            currentBlock.Move(1, 0); // Move block down
+            if (IsBlockOutside() || BlockFits() == false) {
+                currentBlock.Move(-1, 0); // Undo last move if it doesn't fit
+                LockBlock(); // Lock the block in place
+                break; // Exit the loop as the block is now settled
+            }
+        }
     }
 }
 

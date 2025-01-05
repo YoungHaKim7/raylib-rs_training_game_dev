@@ -15,6 +15,7 @@ public:
     void MoveBlockRight();
     void MoveBlockDown();
     void MoveBlockUp();
+    void MoveBlockDown_Bottom();
     Grid grid;
     bool gameOver;
 
