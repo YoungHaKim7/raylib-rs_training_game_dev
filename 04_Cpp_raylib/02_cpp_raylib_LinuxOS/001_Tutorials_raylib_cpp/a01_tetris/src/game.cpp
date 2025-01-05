@@ -84,11 +84,11 @@ void Game::MoveBlockDown()
 {
     if (!gameOver) {
 
-        currentBlock.Move(1, 0);
-        if (IsBlockOutside() || BlockFits() == false) {
-            currentBlock.Move(-1, 0);
-            LockBlock();
-        }
+    currentBlock.Move(1, 0);
+    if (IsBlockOutside() || BlockFits() == false) {
+        currentBlock.Move(-1, 0);
+        LockBlock();
+    }
     }
 }
 

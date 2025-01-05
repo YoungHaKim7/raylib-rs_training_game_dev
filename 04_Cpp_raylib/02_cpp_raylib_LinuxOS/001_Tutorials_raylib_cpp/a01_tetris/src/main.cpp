@@ -1,9 +1,10 @@
 #include <raylib-cpp.hpp>
 
 #include "headers/game.h"
+#include "headers/color.h"
 
 #define SCREEN_WIDTH 800
-#define SCREEN_HEIGHT 600
+#define SCREEN_HEIGHT 700
 
 double lastUpdateTime = 0;
 
@@ -27,6 +28,8 @@ int main()
 
     SetTargetFPS(60);
 
+    Font font = LoadFontEx("assets/font/monogram.ttf", 64, 0, 0);
+
     Game game = Game();
 
     // Main game loop
@@ -39,13 +42,15 @@ int main()
         game.HandleInput();
 
         // BlockDown
-        if (EventTriggered(0.02)) {
+        if (EventTriggered(0.2)) {
             game.MoveBlockDown();
         }
 
         // Draw
         BeginDrawing();
         ClearBackground(darkBlue);
+        DrawTextEx(font, "Score", {365, 15}, 38, 2, WHITE);
+        DrawRectangleRounded({320, 55, 170, 60}, 0.3, 6, lightBlue);
         game.Draw();
         EndDrawing();
     }
