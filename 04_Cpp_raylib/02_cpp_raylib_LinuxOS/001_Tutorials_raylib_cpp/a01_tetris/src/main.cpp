@@ -19,7 +19,8 @@ int main()
     Grid grid = Grid();
     grid.Print();
 
-    OBlock block = OBlock();
+    TBlock block = TBlock();
+    block.Move(4,3);
 
     // Main game loop
     while (!w.ShouldClose()) // Detect window close button or ESC key

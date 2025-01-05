@@ -10,4 +10,4 @@ IndentGotoLabels: true
 IndentPPDirectives: None
 IndentExternBlock: NoIndent
 
-ColumnLimit: 80
+ColumnLimit: 90
