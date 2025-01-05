@@ -5,13 +5,12 @@
 #define SCREEN_WIDTH 800
 #define SCREEN_HEIGHT 600
 
-double lastUpdateTime =0;
+double lastUpdateTime = 0;
 
 bool EventTriggered(double interval)
 {
     double currentTime = GetTime();
-    if(currentTime - lastUpdateTime >= interval)
-    {
+    if (currentTime - lastUpdateTime >= interval) {
         lastUpdateTime = currentTime;
         return true;
     }
@@ -30,7 +29,6 @@ int main()
 
     Game game = Game();
 
-
     // Main game loop
     while (!w.ShouldClose()) // Detect window close button or ESC key
     {
@@ -41,8 +39,7 @@ int main()
         game.HandleInput();
 
         // BlockDown
-        if(EventTriggered(0.2))
-        {
+        if (EventTriggered(0.02)) {
             game.MoveBlockDown();
         }
 
