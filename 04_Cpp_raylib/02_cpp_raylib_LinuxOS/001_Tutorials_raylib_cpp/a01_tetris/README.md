@@ -1,3 +1,28 @@
+# L블록 이해
+
+- 47min 31sec
+
+
+```
+0 0 1    (0,2) (1,0) (1,1) (1,2)
+1 1 1
+0 0 0
+
+0 1 0    (0,1) (1,1) (2,1) (2,2)
+0 1 0
+0 1 1
+
+0 0 0    (1,0) (1,1) (1,2) (2,0)
+1 1 1
+1 0 0
+
+1 1 0    (0,0) (0,1) (1,1) (2,1)
+0 1 0
+0 1 0
+```
+
+<hr />
+
 # Raylib C++ Starter
 The Raylib C++ Starter kit is a template project that provides a simple starter template for the [raylib](https://github.com/raysan5/raylib) game tools library incorporating the [raylib-cpp](https://github.com/robloach/raylib-cpp) C++ bindings and using [Make](https://www.gnu.org/software/make/) for building. The starter kit can automatcially clone down raylib and the bindings, compile them, and setup the project for separate compilation using a static library.
 
