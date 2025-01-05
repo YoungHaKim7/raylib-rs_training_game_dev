@@ -24,6 +24,8 @@ int main()
         // Update
 
         // TODO: Update your variables here
+        // Key handling
+        game.HandleInput();
 
         // Draw
         BeginDrawing();
