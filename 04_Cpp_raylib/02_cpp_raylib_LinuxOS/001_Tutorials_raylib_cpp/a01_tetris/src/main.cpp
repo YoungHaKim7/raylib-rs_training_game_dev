@@ -5,6 +5,19 @@
 #define SCREEN_WIDTH 800
 #define SCREEN_HEIGHT 600
 
+double lastUpdateTime =0;
+
+bool EventTriggered(double interval)
+{
+    double currentTime = GetTime();
+    if(currentTime - lastUpdateTime >= interval)
+    {
+        lastUpdateTime = currentTime;
+        return true;
+    }
+    return false;
+}
+
 int main()
 {
 
@@ -26,6 +39,12 @@ int main()
         // TODO: Update your variables here
         // Key handling
         game.HandleInput();
+
+        // BlockDown
+        if(EventTriggered(0.2))
+        {
+            game.MoveBlockDown();
+        }
 
         // Draw
         BeginDrawing();
