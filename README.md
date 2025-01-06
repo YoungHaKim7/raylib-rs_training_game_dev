@@ -22,6 +22,8 @@
 
 # raylib(C언어 예시 많다 굿)[|🔝|](#link)
 - https://github.com/raylib-extras/examples-c
+  - 개인이 만든거 자랑하는곳 대단한 사람들이 많다.
+    - https://github.com/raysan5/raylib/discussions/1326
 
 <hr />
 
