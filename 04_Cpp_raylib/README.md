@@ -3,6 +3,7 @@
 - https://github.com/RobLoach/raylib-cpp/
 
 - https://github.com/educ8s/Raylib-CPP-Starter-Template-for-VSCODE
+  - https://github.com/tupini07/raylib-cpp-cmake-template
 
 # Raylib Tutorials | Programming With Nick
 - https://youtube.com/playlist?list=PLwR6ZGPvjVOSRywn9VCQ3yrRVruxzzuo9&si=GgBQDYWrxr_Lujg0
