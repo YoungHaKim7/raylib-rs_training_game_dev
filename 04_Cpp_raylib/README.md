@@ -10,6 +10,7 @@
 
 - examples
   - https://github.com/raylib-extras/examples-cpp
+  - https://github.com/raylib-extras/extras-cpp
 
 # raylib-cpp
 - https://robloach.github.io/raylib-cpp/index.html
