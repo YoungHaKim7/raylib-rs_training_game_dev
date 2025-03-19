@@ -1,5 +1,11 @@
 # link
 
+- raylib외국인이 게임 만든거
+  - [ C언어)raylib로 만든거 뱀서랑 비슷github](https://github.com/bones-ai/c-blob-survival)
+    - [소개 영상 플레이 영상 나옴](- https://youtu.be/kHefr2VUDvw?si=qEAEXNAnzaLJALFk)
+
+<hr />
+
 - [실행예시(LinuxOS vs macOS)](#run)
 - [raylib(C언어 예시 많다 굿)](#raylibc언어-예시-많다-굿)
 
